@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-boolean@esm/index.mjs';
+import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-boolean@v0.0.2-esm/index.mjs';
 ```
 
 #### reinterpret( x, offset )
@@ -121,7 +121,7 @@ v = view[ 1 ];
 <script type="module">
 
 import BooleanArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-bool@esm/index.mjs';
-import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-boolean@esm/index.mjs';
+import reinterpret from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-boolean@v0.0.2-esm/index.mjs';
 
 // Define a boolean array:
 var x = new BooleanArray( [ true, false, false, true, true, false ] );
