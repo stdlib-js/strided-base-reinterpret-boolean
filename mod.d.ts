@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2024 The Stdlib Authors.
@@ -16,16 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { BooleanArray } from '@stdlib/types/array';
 
 /**
-* Reinterpret a `BooleanArray` as a `Uint8Array`.
+* Reinterprets a `BooleanArray` as a `Uint8Array`.
 *
-* @module @stdlib/strided-base-reinterpret-boolean
+* @param x - input array
+* @param offset - starting index
+* @returns `Uint8Array` view
 *
 * @example
 * var BooleanArray = require( '@stdlib/array-bool' );
-* var reinterpret = require( '@stdlib/strided-base-reinterpret-boolean' );
 *
 * var x = new BooleanArray( 10 );
 *
@@ -35,12 +40,9 @@
 * var bool = ( out.buffer === x.buffer );
 * // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function reinterpret( x: BooleanArray, offset: number ): Uint8Array;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = reinterpret;
